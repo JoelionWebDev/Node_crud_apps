@@ -1,0 +1,13 @@
+DISCRIPTION ON THE SITE CREATION
+
+//MIDDLEWARE/OAUTH.JS
+the middleware/oauth.js folder is been created to help in the succesfull
+loging in to the dashboard throght the login but not the link, it will
+not make it possible to login throght the link
+
+//VIEWS
+inside the views is were we have our handlebares files
+
+//THE MONGOSTORE
+it will help us to store our section in a data base
+we will introduce the store where we initialize the section

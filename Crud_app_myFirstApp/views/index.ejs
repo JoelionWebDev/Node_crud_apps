@@ -1,0 +1,55 @@
+<!--header section-->
+<%-include('include/__header')%>
+<!--/header section-->
+
+<!--header -->
+<main class="site-main">
+  <div class="container">
+    <div class="usersA gradient">
+      <a href="/add-user" class="user">
+        <span class="text-gradient">
+          New User <i class="fas fa-user"></i>
+        </span>
+      </a>
+    </div>
+
+    <!--TO SHOW ALERT-->
+    <% if (message) {%>
+    <div
+      class="alert alert-dismissible fade show alert-<%= message.type %>"
+      role="alert"
+    >
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="alert"
+        aria-label="close"
+      ></button>
+      <strong><%= message.message %></strong>
+    </div>
+    <% } %>
+
+    <form action="/" method="POST" id="form">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>@Email</th>
+            <th>Gemder</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <%-include('include/__tr')%>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</main>
+
+<!--footer section-->
+<%-include('include/__footer')%>
+<!--/footer section-->

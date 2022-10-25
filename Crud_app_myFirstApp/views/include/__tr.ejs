@@ -1,0 +1,18 @@
+<% users.forEach((row, index)=> {%>
+<tr>
+  <td><% index %></td>
+  <td><%=row.name%></td>
+  <td><%=row.email%></td>
+  <td><%=row.gender%></td>
+  <td><%=row.status%></td>
+  <td>
+    <a href="/edit/<%= row._id%>" class="edit-act font-awsome-shadow">
+      <span class="edit text-gradient"><i class="fas fa-pen"></i></span>
+    </a>
+
+    <a href="/delete/<%= row._id%>" class="delete-act font-awsome-shadow">
+      <span class="delete text-gradient"><i class="fa-solid fa-xmark"></i></i></span>
+    </a>
+  </td>
+</tr>
+<%})%>
